@@ -18,6 +18,6 @@ jobs:
       run:  |
         echo "${{ secrets.Dockerhubpw }}" | docker login  -u "neeleshdeva"  --password-stdin 
         docker build --file Dockerfile --tag ImageTest1:$(date +%s)
-        docker push ImageTest1:$(date +%s)
+        docker push neeleshdeva/githubimagepush:$(date +%s)
               
       
