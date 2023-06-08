@@ -17,7 +17,7 @@ jobs:
     - name: Build and push the Docker image
       run:  |
         echo "${{ secrets.Dockerhubpw }}" | docker login  -u "neeleshdeva"  --password-stdin 
-        docker image build -t neeleshdeva/githubimagepush:v1 .
-        docker push neeleshdeva/githubimagepush:v1
+        docker image build -t neeleshdeva/githubimagepush:"$(date)"v1 .
+        docker push neeleshdeva/githubimagepush:"$(date)"v1
               
       
