@@ -5,11 +5,9 @@ on:
     branches: [ "master" ]
 
 jobs:
-
   Build-Code:
     name: Building the Complete Code
     runs-on: ubuntu-latest
-  #  container: node:17.6.0
     steps:
     - name: Checkout code
     - uses: actions/checkout@v3
@@ -22,7 +20,6 @@ jobs:
   Release-Projects:
     name: Create Release
     runs-on: ubuntu-latest
-  #  container: node:17.6.0
     needs: Build-Code
     steps:
       - name: Checkout code
