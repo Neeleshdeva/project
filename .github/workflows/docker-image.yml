@@ -9,7 +9,7 @@ jobs:
   Build-Code:
     name: Building the Complete Code
     runs-on: ubuntu-latest
-    container: node:17.6.0
+  #  container: node:17.6.0
     steps:
     - uses: actions/checkout@v3
     - name: Build and push the Docker image
@@ -21,7 +21,7 @@ jobs:
   Release-Projects:
     name: Create Release
     runs-on: ubuntu-latest
-    container: node:17.6.0
+  #  container: node:17.6.0
     needs: Build-Code
     steps:
       - name: Create Github Release
