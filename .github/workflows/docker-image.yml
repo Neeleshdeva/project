@@ -39,5 +39,5 @@ jobs:
           draft: false
           prerelease: false
       - name:  Upload Release Assert
-        run:  hub release create Dockerfile   
+        run:  hub release create ..Dockerfile   
       
