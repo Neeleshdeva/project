@@ -39,5 +39,5 @@ jobs:
           draft: false
           prerelease: false
       - name:  Upload Release Assert
-        run:  ls   
+        run:  vim Dockerfile  
       
