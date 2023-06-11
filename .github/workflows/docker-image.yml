@@ -9,7 +9,6 @@ jobs:
     name: Building the Complete Code
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
     - uses: actions/checkout@v3
     - name: Build and push the Docker image
       run:  |
